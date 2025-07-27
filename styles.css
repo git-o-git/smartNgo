@@ -365,16 +365,75 @@ body {
   align-items: flex-start;
   position: sticky;
   top: 18vh;
-  z-index: 900;
+  z-index: 100;
 }
 
 
 
-.container .card #card1 {
-  height: 519px;
-  width: 510px;
+.container .card .cards {
+  /* height: 519px; */
+  height: 79vh;
+  width: 50vw;
   background-color: var(--red-primary);  
-  border: 2px solid black;
+  border: 3vh solid var(--red-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 999;
+}
+
+.card-image {
+  height: 56%;
+  width: 98%;
+  /* margin: 1vh 1vh 1vh 0; */
+  background-color: gray;
+  border-radius: 5%;
+  /* border: 2px solid black; */
+}
+
+.card-Details {
+  height: 27%;
+  width: 98%;
+  /* border: 2px solid black; */
+}
+
+.card-Details h1 {
+  font-size: 2rem;
+  color: var(--black);
+  font-weight: 500;
+  text-align: center;
+}
+
+.card-Details p {
+  font-size: 1rem;
+  color: white;
+  text-align: justify;
+  margin: 0 2vh;
+
+}
+
+.card-link {
+  height: 15%;
+  width: 98%;
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-link a {
+  font-size: 5vh;
+  background-color: var(--background);
+  color: var(--red-primary);
+  /* text-decoration: none; */
+  border-radius: 20vh;
+
+}
+
+.card-link a:hover {
+  font-size: 6vh;
 }
 
 #card1 #card-image {
@@ -382,7 +441,8 @@ body {
 }
 
 .container .card .icon {
-  height: 300px;
+  /* height: 300px; */
+  height: 45vh;
   width: 353px;
   /* background-color: yellowgreen;   */
   display: flex;
@@ -391,21 +451,31 @@ body {
 }
 
 .icon #theme1 {
-  height: 240px;
-  margin-top: 24px;
+  /* height: 240px; */
+  height: 35vh;
+  /* margin-top: 24px; */
+  margin-top: 3vh;
 }
 .icon #theme2 {
-  height: 340px;
+  /* height: 340px; */
+  /* bottom: 10px; */
+  height: 50vh;
+  bottom: 2vh;
   transform: rotate(30deg);
   position: relative;
-  bottom: 10px;
 }
-.icon #theme3 {
-  height: 337px;
+
+.icon #theme3 {    /* same for #theme4 */
+  /* height: 337px; */
+  /* bottom: 10px; */
+  height: 51vh;
+  bottom: 2vh;
   position: relative;
-  bottom: 10px;
   transform: rotate(-30deg);
 }
+
+
+
 
 /* 
 .container .card .ima {
